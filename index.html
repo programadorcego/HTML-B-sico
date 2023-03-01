@@ -10,7 +10,7 @@
 	<h1>Formulário</h1>
 	
 	<div>
-		<form action="" method="POST">
+		<form action="" method="POST" enctype="multipart/form-data">
 			<p><label for="nome">Nome Completo</label><br>
 			<input type="text" name=nome" id="nome" required placeholder="Informe o seu nome completo" ></p>
 			
@@ -46,6 +46,11 @@
 		<p>
 			<label for="mensagem">Mensagem</label><br>
 			<textarea name="mensagem" id="mensagem" placeholder="Informe sua mensagem">Texto de exemplo</textarea>
+		</p>
+		
+		<p>
+			<label for="arquivo">Arquivo</label><br>
+			<input type="file" name="arquivo" id="arquivo" multiple>
 		</p>
 		</form>
 	</div>
